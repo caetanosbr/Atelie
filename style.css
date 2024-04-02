@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --c-base: #ffffff;
+  --c-logo: #f9bdd0;
+  --text: #fef6c5;
+  --bg-logo: #a38151;
+  --c-medio: #686161;
+  --bg-base: #282828;
+  --bg-grad: #f9bdd0;
+  --bg-grad_old: #dcffea;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--bg-base);
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+#app {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "a"
+    "b"
+    "c";
+  margin: 4rem;
+}
+
+#app * {
+  animation: entering 1.5s ease-in-out;
+}
+
+header {
+  grid-area: a;
+}
+
+header img {
+  
+  width: 250px;
+  height: 250px;
+  margin: 4rem;
+  border-radius: 50%;
+  background: var(--bg-base);
+  overflow: clip;
+}
+
+header img:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+header {
+  color: var(--c-logo);
+  fill: remove;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: var(--c-logo);
+  font-weight: 600;
+  padding: 1.4rem;
+  cursor: pointer;
+}
+
+header h1:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+header p {
+  font-size: 1.2em;
+  color: var(--bg-grad_old);
+  font-weight: 300;
+  padding-bottom: 6rem;
+}
+
+section {
+  grid-area: b;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link button {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  border-radius: 2rem;
+  gap: 10rem;
+  font-size: 1.2em;
+  cursor: pointer;
+  background: var(--bg-grad);
+  color: var(--c-logo);
+}
+
+.link button:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.link i {
+  font-size: 2.5rem;
+}
+
+span {
+  color: var(--bg-base);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+i {
+  color: var(--text);
+  font-weight: bold;
+}
+
+footer {
+  grid-area: c;
+}
+
+footer p {
+  padding-top: 1rem;
+  color: var(--bg-grad_old);
+  font-size: 2rem;
+}
+
+.btn-footer i {
+  font-size: 2rem;
+  width: 6rem;
+  height: 6rem;
+  display: inline-block;
+}
+
+.btn-footer {
+  width: 6rem;
+  height: 6rem;
+  display: inline-block;
+  background: var(--bg-grad);
+  line-height: 6rem;
+  border-radius: 50%;
+}
+
+.btn-footer:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+@keyframes entering {
+  from  {
+    opacity: 0;
+    transform: translateY(10px)
+    }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
