@@ -1,7 +1,7 @@
-<h1 align="center"> Menu_Bio </h1>
+<h1 align="center"> LinkDaBio </h1>
 
 <p align="center">
-  <img alt="imagem" src=./assets/print.png>
+  <img alt="imagem" src=./assets/imagem.png>
 </p>
 
 ---
@@ -25,4 +25,4 @@ Esse projeto está sob a licença MIT.
 ---
 
 Deploy:
-[Clicque aqui para acessar o Projeto!](https://)
+[Clicque aqui para acessar o Projeto!](https://caetanosbr.github.io/LBucci/)
